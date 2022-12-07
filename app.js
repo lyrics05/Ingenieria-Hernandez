@@ -8,21 +8,25 @@ const iniciar = ()=>{
 }
 
 const crearGaleria=()=>{
-    const galeria = document.querySelector(".galeria")
-for (let i = 1; i<=26; i++) {
-        const imagen = document.createElement("picture")
-        //imagen.innerHTML= `<source srcset = "/img/imagen${i}.jpg" type="image/jpg">`
-        imagen.innerHTML= ` <img src="/img/imagen${i}.jpg" alt="">`
-        imagen.onclick=function(){
-            mostrarImagen(i)
-        }
-        galeria.appendChild(imagen)
+
+         for (let i = 1; i <=26; i++) {
+            const galeria = document.querySelector(".galeria")
+            const imagen = document.createElement("picture")
+            imagen.innerHTML=`<img src="img/imagen${i}.jpg" alt="">`
+
+            imagen.onclick=function(){
+                mostrarImagen(i)
+            }
+            galeria.appendChild(imagen)
+            
+         }
+      
     }
-}
+
 const mostrarImagen = (id)=>{
     const imagen = document.createElement("picture")
         //imagen.innerHTML= `<source srcset = "/img/imagen${i}.jpg" type="image/jpg">`
-        imagen.innerHTML= ` <img src="/img/imagen${id}.jpg" alt="">`
+        imagen.innerHTML= ` <img src="imagesG/imagen${id}.jpg" alt="">`
     const overlay = document.createElement("DIV")
     overlay.appendChild(imagen)
     overlay.classList.add("overlay")

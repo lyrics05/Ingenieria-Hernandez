@@ -272,12 +272,9 @@ footer img{
        align-items: center;
        
     }
-    .galeria img{
-    
-    }
     
 }
-@media (max-width:384px) {
+@media (max-width:476px) {
     .galeria img{
         width: 125px;
       
