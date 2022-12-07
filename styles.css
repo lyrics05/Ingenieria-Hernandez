@@ -2,14 +2,20 @@
     box-sizing: border-box;
     margin: 0;
 }
+html{
+    scroll-behavior:smooth;
+}
                        /*-----------------------HEADER--------------------*/
 header{
     height: 500px;
   width: 100%;
-    background: #642b73; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, hsla(288, 44%, 36%, 0.658), hsla(340, 53%, 50%, 0.658)),url(fondo.jpg);/* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, hsla(288, 44%, 36%, 0.658), hsla(340, 53%, 50%, 0.658)),url(fondo.jpg);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size: relative;
+  background: #200122;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, hsla(0, 100%, 22%, 0.515), #200122),url(ingeniero-construccion-doble-exposicion-plano-sitio-construccion-ciudad-azul_34200-434.webp); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  background-repeat: no-repeat;
+  
+  background-size:cover;
   background-attachment: fixed;
   position: relative; 
   margin-top: 0;
@@ -186,6 +192,7 @@ footer img{
     }
     .encabezado{
         width: 400px;
+        margin: 0;
     }
 
 }
@@ -222,7 +229,7 @@ footer img{
         font-size: 30px;
     }
     .encabezado{
-      
+        margin: 0;
         width: 460px;
     }
     
@@ -237,10 +244,7 @@ footer img{
        height: 100%;
        
     }
-    .galeria img{
-    
-    
-    }
+  
     }
 
 @media (min-width: 1200px){
@@ -256,14 +260,13 @@ footer img{
        height: 100%;
        
     }
-    .galeria img{
-     
-    }
+   
     
 }
 @media (max-width: 375px){
     .encabezado{
         width: 350px;
+        margin: 0;
     }
     .galeria{
         display: grid;
@@ -281,6 +284,7 @@ footer img{
     }
     .encabezado{
         width: 300px;
+        margin: 0;
     }
     .galeria{
         margin: 0;
