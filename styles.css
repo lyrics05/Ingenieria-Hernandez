@@ -7,14 +7,12 @@ html{
 }
                        /*-----------------------HEADER--------------------*/
 header{
-    height: 500px;
+  height: 500px;
   width: 100%;
   background: #200122;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, hsla(0, 100%, 22%, 0.515), #200122),url(ingeniero-construccion-doble-exposicion-plano-sitio-construccion-ciudad-azul_34200-434.webp); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background: linear-gradient(to right, hsla(0, 100%, 22%, 0.606), hsla(296, 94%, 7%, 0.606)),url(ingeniero-construccion-doble-exposicion-plano-sitio-construccion-ciudad-azul_34200-434.webp); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-repeat: no-repeat;
-  
   background-size:cover;
   background-attachment: fixed;
   position: relative; 
@@ -81,19 +79,25 @@ article section img{
 }
 
 .targeta{
-    width:250px;
-    height: 450px;
+    width:260px;
+    height: auto;
     border-style: solid;
     border-color:orangered;
     border-radius: 10px;
     box-shadow: 1px 1px 1px;
+    padding: 5px;
   
     
 
 }
-
+.quienes_seccion_grid{
+    display:flex;
+    justify-content:space-between;   
+}
 .img-fond{
   margin-left:25px;
+  height: 70%;
+  width: 90%;
 }
 h2{
     font-size: 40px;
@@ -185,18 +189,26 @@ footer img{
     margin-right: 20px;
 }
 /*--------------------------MEDIA QUERYS--------------------------------------*/
-@media (min-width: 768px){
+@media (max-width: 768px){
     .quienes_seccion_grid{
         display:flex;
         justify-content:space-between;   
     }
     .encabezado{
         width: 400px;
-        margin: 0;
+    }
+    header{
+        background: #200122;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, hsla(0, 100%, 22%, 0.606), hsla(296, 94%, 7%, 0.606)),url(ingeniero-construccion-doble-exposicion-plano-sitio-construccion-ciudad-azul_34200-434.webp); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-repeat: no-repeat;
+        background-size:inherit;
+        background-attachment: fixed;
+        position: relative; 
     }
 
 }
-@media (min-width:768px) {
+@media (max-width:768px) {
     .galeria{
        display: grid;
        grid-template-columns: repeat(3, 1fr);
@@ -204,6 +216,7 @@ footer img{
        align-items: center;
        width: 100%;
        height: 100%;
+       margin-right: 50px;
        
     }
     .galeria img{
@@ -228,12 +241,21 @@ footer img{
     .encabezado_flex a{
         font-size: 30px;
     }
-    .encabezado{
-        margin: 0;
-        width: 460px;
+    header{
+        background: #200122;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, hsla(0, 100%, 22%, 0.606), hsla(296, 94%, 7%, 0.606)),url(ingeniero-construccion-doble-exposicion-plano-sitio-construccion-ciudad-azul_34200-434.webp); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-repeat: no-repeat;
+        background-size:inherit;
+        background-attachment: fixed;
+        position: relative; 
     }
-    
+    .video{
+        width: 240px;
+        height: 200px;
+    }
 }
+
 @media (max-width: 480px){
     .galeria{
         display: grid;
@@ -244,6 +266,10 @@ footer img{
        height: 100%;
        
     }
+    .encabezado{
+        margin: 0;
+    }
+   
   
     }
 
@@ -265,7 +291,7 @@ footer img{
 }
 @media (max-width: 375px){
     .encabezado{
-        width: 350px;
+        width: 100%;
         margin: 0;
     }
     .galeria{
@@ -275,6 +301,7 @@ footer img{
        align-items: center;
        
     }
+  
     
 }
 @media (max-width:476px) {
@@ -282,15 +309,10 @@ footer img{
         width: 125px;
       
     }
-    .encabezado{
-        width: 300px;
-        margin: 0;
-    }
+  
     .galeria{
         margin: 0;
         list-style: none;
     }
-    picture{
-       width: 50pxpx;
-    }
+   
 }

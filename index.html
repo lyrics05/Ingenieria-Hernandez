@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +31,19 @@
             <h2>Mis Trabajos</h2>
         <div class="quienes_seccion_grid">
         <section class="targeta">
-            <img class="img-fond"src="quienes somos/prueba1.jpg">
+            <video
+            id="my-video"
+            class="video-js video"
+            controls
+            preload="auto"
+            width="230px"
+            height="250px"
+           
+            data-setup="{}"
+          >
+            <source src="video/VID-20221120-WA0002.mp4" type="video/mp4" />
+          
+          </video>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                  Dolores mollitia eligendi ea similique voluptatibus! 
                  Pariatur id blanditiis perspiciatis hic sit dolores 
@@ -39,7 +52,20 @@
         </section>
         
             <section class="targeta">
-                <img class="img-fond"src="quienes somos/prueba2.jpg">
+                <video
+                id="my-video"
+                class="video-js video"
+                controls
+                preload="auto"
+                width="245px"
+                height="245px"
+                border-radius="50px"
+               
+                data-setup="{}"
+              >
+                <source src="video/VID-20221120-WA0003.mp4" type="video/mp4" />
+              
+              </video>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                      Dolores mollitia eligendi ea similique voluptatibus! 
                      Pariatur id blanditiis perspiciatis hic sit dolores 
@@ -48,7 +74,20 @@
             </section>
 
             <section class="targeta" >
-                <img class="img-fond" src="quienes somos/prueba3.jpg">
+                <video
+            id="my-video"
+            class="video-js video"
+            controls
+            preload="auto"
+            width="245px"
+            height="245px"
+            border-radius="50px"
+           
+            data-setup="{}"
+          >
+            <source src="video/VID-20221120-WA0004.mp4" type="video/mp4" />
+          
+          </video>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                      Dolores mollitia eligendi ea similique voluptatibus! 
                      Pariatur id blanditiis perspiciatis hic sit dolores 
@@ -122,5 +161,6 @@
     </footer>
        
  <script src="./app.js"></script>
+ <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
 </body>
 </html>
