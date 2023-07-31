@@ -52,3 +52,10 @@ const mostrarImagen = (id)=>{
     body.appendChild(overlay)
     body.classList.add("fijar-body")
 }
+
+const contacto = document.getElementById("contacto")
+contacto.addEventListener("click", function(){
+    swal("email: owje@hotmail.com", " Telefono: 468 283 84 93");
+
+})
+
