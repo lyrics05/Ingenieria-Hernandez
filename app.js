@@ -55,7 +55,7 @@ const mostrarImagen = (id)=>{
 
 const contacto = document.getElementById("contacto")
 contacto.addEventListener("click", function(){
-    swal("email: owje@hotmail.com", " Telefono: 468 283 84 93");
+    swal("MORELOS #610 colonia la purisima san luis de la paz juanphernandez2016@outlook.com", " Telefono: 468 129 0074");
 
 })
 
