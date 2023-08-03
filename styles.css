@@ -18,6 +18,62 @@ header{
   position: relative; 
   margin-top: 0;
 }
+.modal-container{
+    background: #200122;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 100%, 22%, 0.606), hsla(296, 94%, 7%, 0.606)),url(ingeniero-construccion-doble-exposicion-plano-sitio-construccion-ciudad-azul_34200-434.webp); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    display: none;
+    
+    
+}
+.modal-container-active{
+    display: block;
+}
+
+.modal-img{
+    width: 30px;
+    height: 30px;
+}
+.modal-img_1{
+    margin-right: 200px;
+}
+.modal-img_2{
+ margin-right: 375px;
+}
+.modal-p{
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+.buton-modal{
+    margin-left: 250px;
+    background-color: rgb(104, 104, 230);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 300px;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+
+
+.flex-info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
                     /*-------------------BARRA DE NAVEGACION---------------------*/
 nav{
    text-align: right;
@@ -317,3 +373,33 @@ footer img{
     }
    
 }
+@media (max-width:480px) {
+  .modal-container{
+    width: 100%;
+    height: auto;
+    z-index: 1;
+  }
+ 
+  .buton-modal{
+    margin-top: 10px;
+    margin-left: 200px;
+  }
+   
+}
+
+@media (max-width:768px) {
+    .modal-container{
+        z-index: 1;
+    }
+    .buton-modal{
+        margin-left: 180px;
+    }
+}
+@media (max-width:1280px) {
+    .modal-container{
+        z-index: 1;
+    }
+    
+}
+
+

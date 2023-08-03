@@ -55,7 +55,12 @@ const mostrarImagen = (id)=>{
 
 const contacto = document.getElementById("contacto")
 contacto.addEventListener("click", function(){
-    swal("MORELOS #610 colonia la purisima san luis de la paz juanphernandez2016@outlook.com", " Telefono: 468 129 0074");
-
+    const modal =document.getElementById("modal")
+    modal.classList.toggle("modal-container-active")
+})
+const buttonCerrar = document.getElementById("buttonCerrar")
+buttonCerrar.addEventListener("click", function(){
+    const modal = document.getElementById("modal")
+    modal.classList.remove("modal-container-active")
 })
 
